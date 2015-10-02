@@ -1,8 +1,7 @@
-app:
-    pattern: /main
-    defaults:
-      _controller: "AppBundle/Controller/MainPageController::PageAction"
+main_page:
+    path:      /main
+    defaults:  { _controller: AppBundle:MainPage:page }
 
-    pattern: /chat
-    defaults:
-      _controller: "AppBundle/Controller/ChatPageController::PageAction"
+chat_page:
+      path:      /chat
+      defaults:  { _controller: AppBundle:ChatPage:page }

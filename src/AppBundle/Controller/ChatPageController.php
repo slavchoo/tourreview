@@ -8,8 +8,9 @@ use Symfony\Component\HttpFoundation\Response;
 
 class ChatPageController extends Controller
 {
-    public function PageAction(Request $request)
+    public function pageAction()
     {
-        return $this->render('ChatPage.html.twig');
+        return new Response(
+            $this->render('ChatPage.html.twig'));
     }
 }

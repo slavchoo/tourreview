@@ -8,8 +8,9 @@ use Symfony\Component\HttpFoundation\Response;
 
 class MainPageController extends Controller
 {
-    public function PageAction(Request $request)
+    public function pageAction()
     {
-        return $this->render('MainPage.html.twig');
+        return new Response(
+            $this->render('MainPage.html.twig'));
     }
 }

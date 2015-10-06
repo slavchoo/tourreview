@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\MainClasses;
+namespace AppBundle\Entity;
 
 class UserClass
 {

@@ -1,6 +1,7 @@
 <?php
+namespace AppBundle\Entity;
 
-namespace AppBundle\MainClasses;
+use Doctrine\ORM\Mapping as ORM;
 
 class StoryClass
 {

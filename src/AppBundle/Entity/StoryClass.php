@@ -20,7 +20,7 @@ class StoryClass
     /**
      * @ORM\Column(type="string", length=100)
      */
-    protected $user_id;
+    protected $userId;
 
     /**
      * @ORM\Column(type="string", length=100)
@@ -30,7 +30,7 @@ class StoryClass
     /**
      * @ORM\Column(type="decimal", scale=2)
      */
-    protected $creation_date;
+    protected $creationDate;
 
     /**
      * @ORM\Column(type="datetime")

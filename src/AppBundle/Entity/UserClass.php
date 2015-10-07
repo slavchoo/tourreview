@@ -21,7 +21,7 @@ class UserClass
     /**
      * @ORM\Column(type="string", length=100)
      */
-    protected $username;
+    protected $userName;
 
     /**
      * @ORM\Column(type="string")
@@ -36,17 +36,17 @@ class UserClass
     /**
      * @ORM\Column(type="string", length=100)
      */
-    protected $first_name;
+    protected $firstName;
 
     /**
      * @ORM\Column(type="string")
      */
-    protected $last_name;
+    protected $lastName;
 
     /**
      * @ORM\Column(type="string")
      */
-    protected $personal_data;
+    protected $personalData;
 
     /**
      * @ORM\Column(type="text")
@@ -62,7 +62,7 @@ class UserClass
      * @ORM\Column(type="string")
      */
     protected $photo;
-    protected $registration_date;
+    protected $registrationDate;
 
     /**
      * @ORM\Column(type="datetime")

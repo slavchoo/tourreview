@@ -10,7 +10,6 @@ class MainPageController extends Controller
 {
     public function pageAction()
     {
-        return new Response(
-            $this->render('MainPage.html.twig'));
+        return $this->render('default/index.html.twig');
     }
 }

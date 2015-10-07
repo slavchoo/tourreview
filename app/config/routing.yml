@@ -2,6 +2,6 @@ main_page:
     path:      /main
     defaults:  { _controller: AppBundle:MainPage:page }
 
-chat_page:
+profile_page:
       path:      /chat
-      defaults:  { _controller: AppBundle:ChatPage:page }
+      defaults:  { _controller: AppBundle:ProfilePage:page }

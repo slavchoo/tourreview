@@ -4,13 +4,13 @@ namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use AppBundle\Form\ArtcleType;
+use AppBundle\Form\ArticleType;
 
-class ArticlePageController
+class ArticlePageController extends Controller
 {
     public function pageAction()
     {
-        return $this->render('default/articles.html.twig');
+        return $this->render('/home/shaman/WorkSpace/tourreview/src/views/ArticlePage.html.twig');
     }
 
     public function newAction(Request $request)

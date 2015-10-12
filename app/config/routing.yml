@@ -5,3 +5,7 @@ main_page:
 profile_page:
       path:      /profile
       defaults:  { _controller: AppBundle:ProfilePage:page }
+
+article_page:
+      path:      /article
+      defaults: {_controller: AppBundle:ArticlePage:page}

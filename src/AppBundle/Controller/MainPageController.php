@@ -9,6 +9,6 @@ class MainPageController extends Controller
 {
     public function pageAction()
     {
-        return $this->render('/home/shaman/WorkSpace/tourreview/src/views/MainPage.html.twig');
+        return $this->render('default/index.html.twig');
     }
 }

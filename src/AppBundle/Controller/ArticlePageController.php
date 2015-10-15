@@ -4,19 +4,23 @@ namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use AppBundle\Form\ArticleType;
+use AppBundle\Form\StoryType;
 
 class ArticlePageController extends Controller
 {
     public function pageAction()
     {
-        return $this->render('/home/shaman/WorkSpace/tourreview/src/views/ArticlePage.html.twig');
+        return $this->render('default/ArticlePage.html.twig');
     }
 
-    public function newAction(Request $request)
+    public function createArticleAction(Request $request)
     {
-        $article = new Article();
-        $form = $this->createForm(new ArticleType(), $article);
-        $form->add('submit');
+        $article = new Story();
+        $form = $this->createForm(new StoryType(), $article);
+
+        return $this->render('default/ArticlePage.html.twig', array(
+            'form' => $form->createView()
+        ));
     }
+
 }

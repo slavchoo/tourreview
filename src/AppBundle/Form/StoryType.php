@@ -16,15 +16,15 @@ class StoryType extends AbstractType
             ->add('title', 'text')
             ->add('summary', 'text')
             ->add('description', 'text')
-            ->add('creation_date', 'datetime')
-            ->add('image', 'image')
+            ->add('creation_date', 'date')
+            ->add('image', 'file')
         ;
     }
 
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'AppBundle\Entity\Story'
+            'data_class' => 'AppBundle\Entity\StoryClass'
         ));
     }
 

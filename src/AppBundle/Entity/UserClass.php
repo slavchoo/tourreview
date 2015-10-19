@@ -98,7 +98,7 @@ class UserClass
         $this->email = $email;
     }
 
-    private function getRegistrationDate()
+    public function getRegistrationDate()
     {
         return $this->registration_date;
     }
@@ -108,7 +108,7 @@ class UserClass
         $this->registration_date = $registration_date;
     }
 
-    private function getFirstName()
+    public function getFirstName()
     {
         return $this->first_name;
     }
@@ -118,7 +118,7 @@ class UserClass
         $this->first_name = $first_name;
     }
 
-    private function getLastName()
+    public function getLastName()
     {
         return $this->last_name;
     }

@@ -79,7 +79,7 @@ class StoryClass
         $this->title = $title;
     }
 
-    private function getCreationDate()
+     function getCreationDate()
     {
         return $this->creation_date;
     }

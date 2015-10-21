@@ -12,11 +12,11 @@ class StoryType extends AbstractType
     {
         $builder
             ->add('id', 'text')
-            ->add('user_id', 'text')
+            ->add('userId', 'text')
             ->add('title', 'text')
             ->add('summary', 'text')
             ->add('description', 'text')
-            ->add('creation_date', 'date')
+            ->add('creationDate', 'date')
             ->add('image', 'file')
         ;
     }

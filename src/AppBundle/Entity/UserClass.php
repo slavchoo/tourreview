@@ -14,42 +14,42 @@ class UserClass
     protected $id;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string")
      */
     protected $username;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="password")
      */
     protected $password;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="email")
      */
     protected $email;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string")
      */
-    protected $first_name;
+    protected $firstName;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string")
      */
-    protected $last_name;
+    protected $lastName;
 
     /**
      * @ORM\Column(type="text")
      */
-    protected $personal_data;
+    protected $personalData;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string")
      */
     protected $phone;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string")
      */
     protected $location;
 
@@ -59,9 +59,9 @@ class UserClass
     protected $photo;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="date")
      */
-    protected $registration_date;
+    protected $registrationDate;
 
     public function getId()
     {
@@ -100,42 +100,42 @@ class UserClass
 
     public function getRegistrationDate()
     {
-        return $this->registration_date;
+        return $this->registrationDate;
     }
 
-    public function setRegistrationDate($registration_date)
+    public function setRegistrationDate($registrationDate)
     {
-        $this->registration_date = $registration_date;
+        $this->registrationDate = $registrationDate;
     }
 
     public function getFirstName()
     {
-        return $this->first_name;
+        return $this->firstName;
     }
 
-    public function setFirstName($first_name)
+    public function setFirstName($firstName)
     {
-        $this->first_name = $first_name;
+        $this->firstName = $firstName;
     }
 
     public function getLastName()
     {
-        return $this->last_name;
+        return $this->lastName;
     }
 
-    public function setLastName($last_name)
+    public function setLastName($lastName)
     {
-        $this->last_name = $last_name;
+        $this->lastName = $lastName;
     }
 
     public function getPersonalData()
     {
-        return $this->personal_data;
+        return $this->personalData;
     }
 
-    public function setPersonalData($personal_data)
+    public function setPersonalData($personalData)
     {
-        $this->personal_data = $personal_data;
+        $this->personalData = $personalData;
     }
 
     public function getPhone()

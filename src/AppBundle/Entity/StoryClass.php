@@ -5,8 +5,6 @@ use Doctrine\ORM\Mapping as ORM;
 
 class StoryClass
 {
-
-
     /**
      * @ORM\Column(type="string")
      * @ORM\Id
@@ -15,14 +13,14 @@ class StoryClass
     protected $id;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string")
      */
-    protected $user_id;
+    protected $userId;
 
     /**
      * @ORM\Column(type="text")
      */
-    protected $summery;
+    protected $summary;
 
     /**
      * @ORM\Column(type="text")
@@ -30,9 +28,9 @@ class StoryClass
     protected $title;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="date")
      */
-    protected $creation_date;
+    protected $creationDate;
 
     /**
      * @ORM\Column(type="text")
@@ -51,22 +49,22 @@ class StoryClass
 
     public function getUserId()
     {
-        return $this->user_id;
+        return $this->userId;
     }
 
-    public function setUserId($user_id)
+    public function setUserId($userId)
     {
-        $this->user_id = $user_id;
+        $this->userId = $userId;
     }
 
-    public function getSummery()
+    public function getSummary()
     {
-        return $this->summery;
+        return $this->summary;
     }
 
-    public function setSummery($summery)
+    public function setSummary($summary)
     {
-        $this->summery = $summery;
+        $this->summary = $summary;
     }
 
     public function getTitle()
@@ -79,19 +77,19 @@ class StoryClass
         $this->title = $title;
     }
 
-     function getCreationDate()
+    public function getCreationDate()
     {
-        return $this->creation_date;
+        return $this->creationDate;
     }
 
-    public function setCreationDate($creation_date)
+    public function setCreationDate($creationDate)
     {
-        $this->creation_date = $creation_date;
+        $this->creationDate = $creationDate;
     }
 
-    private function getDescription()
+    public function getDescription()
     {
-        return $this->creation_date;
+        return $this->description;
     }
 
     public function setDescription($description)
@@ -99,7 +97,7 @@ class StoryClass
         $this->description = $description;
     }
 
-    private function getImage()
+    public function getImage()
     {
         return $this->image;
     }

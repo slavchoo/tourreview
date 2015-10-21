@@ -54,7 +54,7 @@ class UserClass
     protected $location;
 
     /**
-     * @ORM\Column(type="object")
+     * @ORM\Column(type="file")
      */
     protected $photo;
 

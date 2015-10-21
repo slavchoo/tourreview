@@ -38,7 +38,7 @@ class StoryClass
     protected $description;
 
     /**
-     * @ORM\Column(type="object")
+     * @ORM\Column(type="file")
      */
     protected $image;
 

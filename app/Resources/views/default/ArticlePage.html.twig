@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{% block title %}Tourreview. We open your way!{% endblock %}</title>
 </head>
 <body>
-{{ form_start(form) }}
-{{ form_widget(form) }}
+        <div >
+            <hl>{{ description }}</hl>
 
-<input type="submit" value="Create"
-       class="btn btn-default pull-right" />
-{{ form_end(form) }}
+        </div>
+
+<div id="content">
+    {% block body %}{% endblock %}
+</div>
 </body>
 </html>

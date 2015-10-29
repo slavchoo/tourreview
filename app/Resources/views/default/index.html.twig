@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app>
 <head>
-    <title>Tour Review</title>
+    <title>{% block title %}Tourreview. We open your way!{% endblock %}</title>
     <link rel="stylesheet" href="/styles/style.css"/>
     <link rel="stylesheet" href="/styles/bootstrap.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
@@ -21,14 +21,14 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Статьи</a></li>
-                <li><a href="catalog-list.html">Профайл</a></li>
-                <li><a href="">Маршруты</a></li>
-                <li><a href="">Новости</a></li>
+                <li class="active"><a href="#">Articles</a></li>
+                <li><a href="/profile/">Profile</a></li>
+                <li><a href="">Routes</a></li>
+                <li><a href="">News</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="">Вход</a></li>
-                <li><a href="">Регитсрация</a></li>
+                <li><a href="/profile/">Sign In</a></li>
+                <li><a href="/profile">Sign Up</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

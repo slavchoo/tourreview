@@ -11,18 +11,20 @@ class StoryType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+            ->add('id', 'text')
+            ->add('userId', 'text')
             ->add('title', 'text')
             ->add('summary', 'text')
             ->add('description', 'text')
-            ->add('creation_date', 'datetime')
-            ->add('image', 'image')
+            ->add('creationDate', 'date')
+            ->add('image', 'file')
         ;
     }
 
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'AppBundle\Entity\Story'
+            'data_class' => 'AppBundle\Entity\StoryClass'
         ));
     }
 

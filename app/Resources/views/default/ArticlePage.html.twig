@@ -1,15 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
+    <link rel="stylesheet" href="/styles/style.css"/>
+    <link rel="stylesheet" href="/styles/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{% block title %}Tourreview. We open your way!{% endblock %}</title>
 </head>
 <body>
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Tour Review</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/main">Articles</a></li>
+                <li><a href="/profile/"{{ userId }}>Profile</a></li>
+                <li><a href="">Routes</a></li>
+                <li><a href="">News</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/profile/"{{ userId }}>Sign In</a></li>
+                <li><a href="/profile">Sign Up</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+    <div>
+        <hl>{{ title }}</hl>
+    </div>
+    <div>
+        <hl>{{ summary }}</hl>
+    </div>
+    <div>
+        <hl>{{ description }}{{ image }}</hl>
+    </div>
+    <div>
+        <hl>{{ creationDate }}</hl>
+    </div>
 {{ form_start(form) }}
 {{ form_widget(form) }}
-
-<input type="submit" value="Create"
-       class="btn btn-default pull-right" />
+    <input type="submit" value="Create"
+           class="btn btn-default pull-right" />
 {{ form_end(form) }}
+<div>
+    <li><a href="/article/"{{ userId }}>Author</a></li>
+</div>
 </body>
 </html>

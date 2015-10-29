@@ -5,6 +5,8 @@ use Doctrine\ORM\Mapping as ORM;
 
 class StoryClass
 {
+
+
     /**
      * @ORM\Column(type="string")
      * @ORM\Id

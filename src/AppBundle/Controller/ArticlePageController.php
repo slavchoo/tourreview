@@ -17,7 +17,13 @@ class ArticlePageController extends Controller
         $form = $this->createForm(new StoryType(), $article);
 
         return $this->render('default/ArticlePage.html.twig', array(
-            'form' => $form->createView()
+            'form' => $form->createView(),
+            'title' => $article->getTitle(),
+            'summary' => $article->getSummary(),
+            'description' => $article->getDescription(),
+            'image' => $article->getImage(),
+            'creationDate' => $article->getCreationDate(),
+            'userId' => $article->getUserId()
         ));
     }
 
